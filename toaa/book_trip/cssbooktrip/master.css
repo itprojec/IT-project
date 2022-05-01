@@ -1,0 +1,179 @@
+body{
+  background-color: white;
+}
+input[type=text,password,email,date,time], select {
+
+  width: 50%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 50px;
+  
+  box-sizing: border-box;
+  
+
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition : transfotm .2s;
+  
+
+
+}
+
+input[type=submit]:hover {
+  background-color:orange;
+  transform: scale(0.95);
+}
+
+
+
+
+
+
+
+.new {
+  border-radius: 6px;
+  
+  padding: 50px;
+  text-align: center;
+  background-size: 100%;
+  background-position-y:center;
+  background-position-x: left;
+  background-color: rgba(255, 224, 130, 1);
+
+  border: 2px solid orange;
+  border-radius: 10px;
+  float: left;
+  margin-top: 110px;
+  margin-left: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+input{
+  border-radius: 6px;
+  border-color: orange;
+  border: 2px solid orange;
+ 
+  
+}
+
+
+label{
+  width: 120px;
+  display: inline-block;
+  text-align: center;
+ 
+}
+
+.photo{
+ 
+  display: ;
+  margin: 0 auto;
+  float: right;
+  margin-top: 10%;
+  margin-right: 5%;
+}
+
+
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;
+  background-color:white;
+ }
+  
+  .logo{
+   font-family: Audiowide;
+   text-align:left;
+   font-size:30px;
+   margin:auto;
+   display:inline;
+   padding:auto;
+   color:orange;
+   }
+   
+ 
+ .navbar {
+   overflow: hidden;
+   background-color: white;
+   position: sticky;
+   position: -webkit-sticky;
+   top: 0;
+   border-bottom:1px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.09);
+ }
+ 
+ /* Style the navigation bar links */
+ .navbar a {
+   float:right;
+   display: inline;
+   color: black;
+   text-align: center;
+   padding: 10px 14px;
+   text-decoration: none;
+   margin:auto;
+   margin-left:15px;
+   padding-top:27px;
+   transition: transform .2s;
+ }
+ 
+ /* Change color on hover */
+ .navbar a:hover ,.navbar a.active {
+ border-bottom:1px solid;
+  border-bottom-color:orange;
+  color:orange;
+  transform: scale(0.95);
+ }
+ 
+ /* Right-aligned link */
+ .navbar a.right {
+   float: right;
+ }
+ 
+ .btn {
+   background-color:transparent;
+   float:right;
+   width:4px;
+   background-repeat:no-repeat;
+   outline:none;
+   padding:0px 10px;  
+   cursor: pointer;
+   color:black;
+   margin-left:10px;
+   padding-top:22px;
+   border:none;
+ }
+ .btn:hover{
+ background-color:transparent;
+ }
+
+
+ .dark-mode {
+   background-color: black;
+   color :black;
+  
+ }
+
+ .footer {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.09);
+  color:orange;
+ 
+ 
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+        
+        .logo {
+            font-family: Audiowide;
+            text-align: left;
+            font-size: 30px;
+            margin: auto;
+            display: inline;
+            padding: auto;
+            color: orange;
+        }
+        
+        .navbar {
+            overflow: hidden;
+            background-color: white;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+            border-bottom: 1px;
+            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.09);
+        }
+        /* Style the navigation bar links */
+        
+        .navbar a {
+            float: right;
+            display: inline;
+            color: black;
+            text-align: center;
+            padding: 10px 14px;
+            text-decoration: none;
+            margin: auto;
+            margin-left: 15px;
+            padding-top: 27px;
+        }
+        /* Change color on hover */
+        
+        .navbar a:hover,
+        .navbar a.active {
+            border-bottom: 1px solid;
+            border-bottom-color: orange;
+            color: orange;
+        }
+        /* Right-aligned link */
+        
+        .navbar a.right {
+            float: right;
+        }
+        
+        .btn {
+            background-color: transparent;
+            float: right;
+            width: 4px;
+            background-repeat: no-repeat;
+            outline: none;
+            padding: 0px 10px;
+            cursor: pointer;
+            color: black;
+            margin-left: 10px;
+            padding-top: 22px;
+            border: none;
+        }
+        
+        .btn:hover {
+            background-color: transparent;
+        }
+        
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+
+
+
+    <!-- separator -->
+
+
+
+
+    <link rel="stylesheet" href="css.css">
+    <title>home page</title>
+</head>
+
+<body>
+
+
+
+
+    <div class="navbar">
+        <img src="logo3.jpg" style="width:60px">
+        <div class="logo"><sup>Tips and Trips</sup>
+
+
+        </div>
+        <id class="navbar a">
+            <button class="btn" ; onclick="myFunction()"><i class="material-icons" style="float:right " >dark_mode</i></button>
+            <a onclick="clickSingleA(this)" class="single" href="hazem_gawwad_IT_project\login_page\index.html" target="mnfrm3">Login</a>
+            <a onclick="clickSingleA(this)" class="single" href="Tasneem\Contactus.html" target="mnfrm3">Contact Us</a>
+            <a onclick="clickSingleA(this)" class="single" href="project 2\feedback.html" target="mnfrm3">Feedback</a>
+            <a onclick="clickSingleA(this)" class="single" href="hazem_gawwad_IT_project\offer_page\index.html" target="mnfrm3">Offers %</a>
+            <a onclick="clickSingleA(this)" class="single" href="IT_project\hotels.html" target="mnfrm3">Hotels</a>
+            <a onclick="clickSingleA(this)" class="single" href="Tasneem\Airtrips1.html" target="mnfrm3">Air trips</a>
+            <a onclick="clickSingleA(this)" class="single" href="project 2\Tour_Guide.html" target="mnfrm3">Tour guid</a>
+            <a onclick="clickSingleA(this)" class="single" href="basant\Guide.html" target="mnfrm3">Guide</a>
+            <a onclick="clickSingleA(this)" class="single" href="toaa\choose_trip\choosetrip.html" target="mnfrm3">Trips</a>
+            <a onclick="clickSingleA(this)" class="single" href="html.html" target="mnfrm3" class="right">Home</a>
+
+    </div>
+    </div>
+    </div>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+        function clickSingleA(a) {
+            items = document.querySelectorAll('.single.active');
+
+            if (items.length) {
+                items[0].className = 'single';
+            }
+
+            a.className = 'single active';
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <hr>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <div class="mySlides1">
+            <img src="1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="egypt.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="egypt2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="beach1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="beach2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="beach3.jpg" style="width:100%">
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+    <div class="monu">
+
+        <p>
+            for sure you heard about the monuments of Egypt like the pyramids and temple of karnak and also hearded about the beautiful egypt beachs so you can visit them by going ith us on some trips by <a href="html3.html">clicking here</a>
+        </p>
+    </div>
+
+
+    <hr>
+
+
+
+
+
+
+    <!-- separator -->
+
+
+
+
+
+
+
+    <div class="slideshow-container">
+        <div class="mySlides2">
+            <img src="h1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="h2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+            <img src="h3.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+
+
+    <div class="hotel">
+
+        <p style="margin-top : 40px"><strong>It is beautiful right!</strong>
+            <p>In egypt we have alot of beautiful hotels this is called nile city hotel <br> and you can book your room or swite from us <br> if you want to see more hotels you can <a href="html2.html" target="_blank">click here</a> to go and see them</p>
+
+    </div>
+    <hr>
+
+
+
+
+
+
+
+
+    <!-- separator -->
+
+
+
+
+
+    -->
+    <footer>
+        <p> you can contact us and know more about us by visiting this <a href="htmljs.html">link</a> </p>
+
+
+    </footer>
+
+    <script src="jsproject.js"></script>
+
+
+
+</body>
+
+</html>

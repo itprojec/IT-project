@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Tips and Trips - Guide</title>
+    <link rel="shortcut icon" type="image" href="logo3.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+        function clickSingleA(a) {
+            items = document.querySelectorAll('.single.active');
+
+            if (items.length) {
+                items[0].className = 'single';
+            }
+
+            a.className = 'single active';
+        }
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: white;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .logo {
+            font-family: Audiowide;
+            text-align: left;
+            font-size: 30px;
+            margin: auto;
+            display: inline;
+            padding: auto;
+            color: orange;
+        }
+        
+        .navbar {
+            overflow: hidden;
+            background-color: white;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+            border-bottom: 1px;
+            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.09);
+        }
+        /* Style the navigation bar links */
+        
+        .navbar a {
+            float: right;
+            display: inline;
+            color: black;
+            text-align: center;
+            padding: 10px 14px;
+            text-decoration: none;
+            margin: auto;
+            margin-left: 15px;
+            padding-top: 27px;
+            transition: transform .2s;
+            /* Animation */
+        }
+        /* Change color on hover */
+        
+        .navbar a:hover,
+        .navbar a.active {
+            border-bottom: 1px solid;
+            border-bottom-color: orange;
+            color: orange;
+            transform: scale(0.95)
+        }
+        /* Right-aligned link */
+        
+        .navbar a.right {
+            float: right;
+        }
+        
+        .btn {
+            background-color: transparent;
+            float: right;
+            width: 4px;
+            background-repeat: no-repeat;
+            outline: none;
+            padding: 0px 10px;
+            cursor: pointer;
+            color: black;
+            margin-left: 10px;
+            padding-top: 22px;
+            border: none;
+        }
+        
+        .btn:hover {
+            background-color: transparent;
+        }
+        
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+        /* Center website */
+        
+        .main {
+            width: 100%;
+            margin: auto;
+        }
+        
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+        }
+        
+        .row {
+            margin: 8px -16px;
+        }
+        /* Add padding BETWEEN each column */
+        
+        .row,
+        .row>.column {
+            padding: 10px;
+        }
+        /* Create four equal columns that floats next to each other */
+        
+        .column {
+            float: left;
+            width: 50%;
+        }
+        /* Clear floats after rows */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Content */
+        
+        .content {
+            background-color: rgba(0, 0, 0, 0.09);
+            ;
+            padding: 8px;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            transition: transform .2s;
+            /* Animation */
+        }
+        /* On hover, add background color with a little bit see-through */
+        
+        .content:hover {
+            background-color: orange;
+            transform: scale(1.07)
+        }
+        
+        .footer {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.09);
+            color: orange;
+            position: relative;
+            width: 100%;
+        }
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        
+        @media screen and (max-width: 900px) {
+            .column {
+                width: 50%;
+            }
+        }
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- MAIN (Center website) -->
+    <div class="main">
+
+        <div class="navbar">
+            <img src="logo3.jpeg" style="width:60px">
+            <div class="logo"><sup>Tips and Trips</sup>
+
+
+            </div>
+            <id class="navbar a">
+                <button class="btn" ; onclick="myFunction()"><i class="material-icons" style="float:right " >dark_mode</i></button>
+                <a onclick="clickSingleA(this)" class="single" href="..\hazem_gawwad_IT_project\login_page\index.html" target="mnfrm3">Login</a>
+                <a onclick="clickSingleA(this)" class="single" href="..\Tasneem\Contactus.html" target="mnfrm3">Contact Us</a>
+                <a onclick="clickSingleA(this)" class="single" href="..\hazem_gawwad_IT_project\offer_page\index.html" target="mnfrm3">Offers %</a>
+                <a onclick="clickSingleA(this)" class="single" href="..\IT_project\hotel.html" target="mnfrm3">Hotels</a>
+                <a onclick="clickSingleA(this)" class="single" href="..\Tasneem\Airtrips1.html" target="mnfrm3">Air trips</a>
+                <a onclick="clickSingleA(this)" class="single" href="..\project 2\Tour_Guide.html" target="mnfrm3">Tour guid</a>
+                <a onclick="clickSingleA(this)" class="single" href="#" target="mnfrm3">Guide</a>
+                <a onclick="clickSingleA(this)" class="single" href="..\project 2\feedback.html" target="mnfrm3">Feedback</a>
+                <a onclick="clickSingleA(this)" class="single" href="..\toaa\choose_trip\choosetrip.html" target="mnfrm3">Trips</a>
+                <a onclick="clickSingleA(this)" class="single" href="..\html.html" target="mnfrm3" class="right">Home</a>
+
+
+        </div>
+    </div>
+    </div>
+
+    <h1 style="text-align:center;">Places to Visit in Egypt</h1>
+    <hr>
+    <p style="text-align:center;">Home of the ancient Pharaohs,Egyptis a destination full of dazzling temples and tombs that wow all who visit. It's not all historic treasures and tourist attractions and cruising on the famed Nile River, there are plenty of things to do for all types
+        of travelers.
+
+        <br>Cairo is the megalopolis that can't be beaten for city slickers, while Siwa oasis and the southern town of Aswan offer a slice of the slow pace of the countryside.
+        <br>With so much to see and do, Egypt offers visitors a chance to create itineraries that combine
+        <br><b> So here is a simple guide to most rated places in Egypt we hope you enjoy it.</b></p>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+        <div class="column">
+            <div class="content">
+                <img src="pyramids-of-giza.jpg" alt="pyramids of giza" style="width:100%">
+                <h3>Pyramids Of Giza</h3>
+                <p>The last surviving wonder of the Seven Wonders of the Ancient World, the Pyramids of Giza are one of the world's most recognizable landmarks. Having awed travelers down through the ages, these tombs of the Pharaohs Cheops (Khufu), Chephren
+                    (Khafre), and Mycerinus (Menkaure), guarded by the enigmatic Sphinx.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="karnak-temple.jpg" alt="Karnak Temple" style="width:100%">
+                <h3>Karnak Temple</h3>
+                <p>Famed for the Valley of the Kings, Karnak Temple, and the Memorial Temple of Hatshepsut, the Nile-side town of Luxor in Upper Egypt has a glut of tourist attractions. This is ancient Thebes, power base of the New Kingdom pharaohs, and
+                    home to more sights than most can see on one visit. Luxor's east bank is home the modern city, with its vibrant souq; the two temples of Karnak and Luxor; and the museum. The west bank's lush farmland and barren cliffs are where the
+                    vast majority of Luxor's tourist attractions sit, with so many tomb and temple sights that it has been called the biggest open-air museum in the world. you'll see why Luxor continues to fascinate historians and archaeologists.</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="content">
+                <img src="abu-simbel-temple.jpg" alt="Abu Simbel" style="width:100%">
+                <h3>Abu Simbel</h3>
+                <p>Even in a country festooned with temples, Abu Simbel is something special. This is Ramses II's great temple, adorned with colossal statuary standing guard outside, and with an interior sumptuously decorated with wall paintings. Justly
+                    famous for its megalithic proportions, Abu Simbel is also known for the incredible engineering feat carried out by UNESCO in the 1960s, which saw the entire temple moved from its original setting to save it from disappearing under
+                    the rising water of the Aswan dam.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="temple-of-hathor.jpg" alt="Temple of Hathor" style="width:100%">
+                <h3>Temple of Hathor</h3>
+                <p>
+                    The Temple of Hathor at Dendara was built in the late Pharaonic era and extended during the Roman period, though Dendara itself was an important cult center from early on in the period of Ancient Egypt. A trip here is well worth a day trip from Luxor,
+                    as the temple's youth (in comparison to other Pharaonic temples) means that it is one of the most complete surviving temples in Egypt. The reliefs and decoration here are in an excellently preserved state.</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="content">
+                <img src="islamic-cairo.jpg" alt="Islamic Cairo" style="width:100%">
+                <h3>Islamic Cairo</h3>
+                <p>The atmospheric, narrow lanes of the capital's Islamic Cairo district are crammed full of mosques, madrassas (Islamic schools of learning), and monuments dating from the Fatimid through to the Mameluke eras. This is where you'll find the
+                    labyrinth shopping souq of Khan el-Khalili, where coppersmiths and artisans still have their tiny workshops, and stalls are laden with ceramics, textiles, spice, and perfume. Surrounding the market is a muddle of roads, home to some
+                    of the most beautiful preserved architecture of the old Islamic empires. Visit Al-Azhar Mosque and the dazzling Sultan Hassan Mosque.</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="content">
+                <img src="coptic-cairo.jpg" alt=" Fortress of Babylon walls" style="width:100%">
+                <h3>Fortress of Babylon walls </h3>
+                <p>The Cairo district known as Coptic Cairo is one of the most important Christian sites in the country. Originally the Fortress of Babylon, dating back to the Achaemenid Empire's conquest of Egypt in 525 BCE, this district is home to Cairo's
+                    oldest surviving church, synagogue, and mosque, as well as the excellent Coptic Museum, which holds the world's largest collection of Coptic Christian art and antiquities. A section of the Fortress of Babylon's walls, which were repaired
+                    and expanded under Roman rule, are also still standing and are the entrance into the district.
+
+                    <br>Make sure to visit the Hanging Church which holds a fine collection of icons.</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="content">
+                <img src="luxor.jpg" alt="Cruising on the Nile at Luxor" style="width:100%">
+                <h3>Cruising on the Nile at Luxor</h3>
+                <p>Egypt is defined by the Nile. For many visitors, a multi-day cruise upon this famed waterway that saw the rise of the Pharaonic era is a highlight of their Egypt trip. Cruising the Nile is also the most relaxing way to see the temples
+                    that stud the banks of the river on the route between Luxor and Aswan, plus sunrise and sunset over the date-palm-studded river banks, backed by sand dunes.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="aswan.jpg" alt="Feluccas on the Nile at Aswan" style="width:100%">
+                <h3>Feluccas on the Nile at Aswan</h3>
+                <p>Egypt's most tranquil town is Aswan, set upon the winding curves of the Nile. Backed by orange-hued dunes, this is the perfect place to stop and unwind for a few days and soak up the chilled-out atmosphere. Take the river ferry across
+                    to Elephantine Island and stroll the colorful streets of the Nubian villages. Then ride a camel to the desert monastery of St. Simeon on Aswan's east bank. Afterwards, relax in one of the riverboat restaurants while watching the lateen-sailed
+                    feluccas drift past.</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="content">
+                <img src="st-katherines-monastery.jpg" alt="St. Catherine's Monastery" style="width:100%">
+                <h3>St. Catherine's Monastery</h3>
+                <p>One of the oldest monasteries in the world, St. Catherine's stands at the foot of Mount Sinai, amid the desert mountains of the Sinai Peninsula, where Moses is said to have received the Ten Commandments. This desert monastery is home to
+                    an incredible collection of religious iconography, art, and manuscripts (some of which can be seen in the on-site museum), as well as the burning bush. For most visitors here, a trip to St. Catherine's also involves a hike up Mount
+                    Sinai to see sunrise or sunset.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="national-museum-of-egytion-civilization.jpg" alt="The National Museum of Egyptian Civilization." style="width:100%">
+                <h3>The National Museum of Egyptian Civilization</h3>
+                <p>The NMEC is the first of its kind in Egypt and the Arab world. It presents the full range of the richness and diversity of Egyptian civilization throughout the ages, from prehistoric times to the present day by focusing on its continuity
+                    and stability as demonstrated by its tangible and intangible heritage. The museum’s exceptional collection includes the royal mummies, which are exhibited in a new interactive display using 21st century cutting-edge technology to go
+                    beneath the wrappings and reveal their secrets, in addition to shedding light on the rituals and religious beliefs surrounding mummification in ancient Egypt.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="egyptian-museum.jpg" alt="Egyptian Museum" style="width:100%">
+                <h3>Egyptian Museum</h3>
+                <p>A treasure trove of the Pharaonic world, Cairo's Egyptian Museum is one of the world's great museum collections. The faded pink mansion in downtown Cairo is home to a dazzling amount of exhibits. It's a higgledy-piggledy place, with little
+                    labeling on offer and chronological order severely lacking. Instead every corner you turn here is home to some wonderful piece of ancient art or statuary, which would be the highlight of any other museum. The museum's star collection
+                    is the haul of golden treasures unearthed from Tutankhamen's tomb in the Valley of the Kings.
+                </p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="content">
+                <img src="monastery-of-st-anthony.jpg" alt="Monastery of St. Anthony" style="width:100%">
+                <h3>Monastery of St. Anthony</h3>
+                <p>Secreted within the jagged northern mountains of the Red Sea coast, the Monastery of St. Anthony has been a working monastery since the 4th century, and today is still home to around 120 monks. The Church of St. Anthony, within the fortress-like
+                    compound, has an interior of secco wall paintings that are considered one of the most important collections of Egyptian Coptic art in the world and date from around the 11th and 12th centuries. The church is also home to the tomb of
+                    St. Anthony (the father of monasticism) and is a major pilgrimage destination for Egyptian Coptic Christians.
+                    <br> Anthony's Monastery is very isolated.so you have to get a way of transport.</p>
+            </div>
+        </div>
+
+
+        <!-- END GRID -->
+    </div>
+    <hr>
+    <div>
+        <video width="100%" height="50%" autoplay muted controls>
+  <source src="Let's Go - Egypt.mp4" type="video/mp4">
+  <source src="Let's Go - Egypt.ogg" type="video/ogg">
+</video>
+    </div>
+    <hr>
+    <!-- END MAIN -->
+    </div>
+
+    <div class="footer">
+        <p>© Copyright 2022 | All rights reserved.</p>
+    </div>
+</body>
+
+</html>

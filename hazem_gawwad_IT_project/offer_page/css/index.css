@@ -1,0 +1,119 @@
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 600px;
+    overflow: hidden;
+  }
+  div.gallery:hover {
+    transform: scale(1.1);
+    }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    max-height: 400px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+
+  }
+  a{
+      font-weight: bold;
+  }
+
+  a.book:hover{
+    color: red;
+  }
+
+  .special{
+      text-align: center;
+      border: 40px;
+      margin: 40px;
+  }
+
+  body {font-family: Arial, Helvetica, sans-serif;
+    background-color:white;
+   }
+    
+    .logo{
+     font-family: Audiowide;
+     text-align:left;
+     font-size:30px;
+     margin:auto;
+     display:inline;
+     padding:auto;
+     color:orange;
+     }
+     
+   
+   .navbar {
+     overflow: hidden;
+     background-color: white;
+     position: sticky;
+     position: -webkit-sticky;
+     top: 0;
+     border-bottom:1px;
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.09);
+   }
+   
+   /* Style the navigation bar links */
+   .navbar a {
+     float:right;
+     display: inline;
+     color: black;
+     text-align: center;
+     padding: 10px 14px;
+     text-decoration: none;
+     margin:auto;
+     margin-left:15px;
+     padding-top:27px;
+     
+   }
+   
+   /* Change color on hover */
+   .navbar a:hover ,.navbar a.active {
+   border-bottom:1px solid;
+    border-bottom-color:orange;
+    color:orange;
+   }
+   
+   /* Right-aligned link */
+   .navbar a.right {
+     float: right;
+   }
+   
+   .btn {
+     background-color:transparent;
+     float:right;
+     width:4px;
+     background-repeat:no-repeat;
+     outline:none;
+     padding:0px 10px;  
+     cursor: pointer;
+     color:black;
+     margin-left:10px;
+     padding-top:22px;
+     border:none;
+   }
+   .btn:hover{
+   background-color:transparent;
+   }
+   .dark-mode {
+     background-color: black;
+     color: white;
+   }
+   .footer {
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.09);
+    color:orange;
+  }
+   

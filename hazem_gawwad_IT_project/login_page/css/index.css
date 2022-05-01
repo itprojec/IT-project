@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(side-photo.png);
+    background-position: 300px 270px;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:white;
+}
+.loginbox{
+    width: 380px ;
+    height: 450px ;
+    background: white;
+    color: #000;
+    top: 50%;
+    left:70%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px ;
+    border-radius: 10px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left:calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.loginbox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"],input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none ;
+    height: 40px ;
+    color: #000;
+    font-size: 16px;
+}
+
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #000;
+    font-size: 18px;
+    border-radius: 20px ;
+}
+
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #0738fcb0;
+    color: white;
+}
+
+.loginbox a {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 30px;
+    color: darkgray;
+
+}
+.loginbox a:hover{
+    color: blue;
+}
+
+button{
+    background-color:rgb(0, 0, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 20px 20px;
+    text-align: right;
+    display: inline-block;
+    font-size: 18px;
+    border-radius:50%;
+}
+button:hover{
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+    
+    .logo{
+     font-family: Audiowide;
+     text-align:left;
+     font-size:30px;
+     margin:auto;
+     display:inline;
+     padding:auto;
+     color:orange;
+     }
+     
+   
+   .navbar {
+     overflow: hidden;
+     background-color: white;
+     position: sticky;
+     position: -webkit-sticky;
+     top: 0;
+     border-bottom:1px;
+     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.09);
+    
+   }
+   
+   /* Style the navigation bar links */
+   .navbar a {
+     float:right;
+     display: inline;
+     color: black;
+     text-align: center;
+     padding: 10px 14px;
+     text-decoration: none;
+     margin:auto;
+     margin-left:15px;
+     padding-top:27px;
+     
+   }
+   
+   /* Change color on hover */
+   .navbar a:hover ,.navbar a.active {
+    border-bottom:1px solid;
+    border-bottom-color:orange;
+    color:orange;
+   }
+   
+   /* Right-aligned link */
+   .navbar a.right {
+     float: right;
+   }
+   
+   .btn {
+     background-color:transparent;
+     float:right;
+     width:4px;
+     background-repeat:no-repeat;
+     outline:none;
+     padding:0px 10px;  
+     cursor: pointer;
+     color:black;
+     margin-left:10px;
+     padding-top:22px;
+     border:none;
+   }
+   .btn:hover{
+   background-color:transparent;
+   }
+   .dark-mode {
+     background-color: black;
+     color: white;
+   }
+   .footer {
+    padding: 10px;
+    text-align:center ;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.09);
+    color:orange;
+  }
+   
+   

@@ -1,0 +1,126 @@
+.img {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 119, 255)
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.img2 {
+    display: inline-block;
+    width: 30%;
+    margin-left: 9%;
+    margin-right: 9%;
+    height: 200px;
+}
+
+.hotel {
+    /* background-color: #006778; */
+}
+
+.beach {
+    /* background-color: darkblue; */
+    margin-top: 100px;
+    padding-top: 100px;
+    /* margin-top:200px;background-color:darkblue;padding-top:100px */
+}
+
+.monu {}
+
+body {
+    background-color: #f5f6f7;
+}
+
+hr {
+    border: 5px solid black;
+    padding: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+    width: 100%;
+}
+
+footer {
+    border: 5px black;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 200px;
+    font-size: 25px;
+    text-align: start;
+    background-image: url("footer2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides1,
+.mySlides2 {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a grey background color */
+
+.prev:hover,
+.next:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
