@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tour Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/jpeg" href="logo3.jpeg">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="logo3.jpeg" style="width:60px">
+        <div class="logo"><sup>Tips and Trips</sup></div>
+        <id class="navbar a">
+            <button class="btn" ; onclick="myFunction()"><i class="material-icons" style="float:right " >dark_mode</i></button>
+            <a onclick="clickSingleA(this)" class="single" href="..\hazem_gawwad_IT_project\login_page\index.html" target="mnfrm3">Login</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\Tasneem\Contactus.html" target="mnfrm3">Contact Us</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\hazem_gawwad_IT_project\offer_page\index.html" target="mnfrm3">Offers %</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\IT_project\hotels.html" target="mnfrm3">Hotels</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\Tasneem\Airtrips1.html" target="mnfrm3">Air trips</a>
+            <a onclick="clickSingleA(this)" class="single" href="#" target="mnfrm3">Tour guid</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\basant\Guide.html" target="mnfrm3">Guide</a>
+            <a onclick="clickSingleA(this)" class="single" href="feedback.html" target="mnfrm3">Feedback</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\toaa\choose_trip\choosetrip.html" target="mnfrm3">Trips</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\html.html" target="mnfrm3" class="right">Home</a>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="WhatsApp Image 2022-04-30 at 8.42.11 PM.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="WhatsApp Image 2022-04-30 at 8.54.07 PM.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="WhatsApp Image 2022-04-30 at 8.57.49 PM.jpeg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+        function clickSingleA(a) {
+            items = document.querySelectorAll('.single.active');
+
+            if (items.length) {
+                items[0].className = 'single';
+            }
+
+            a.className = 'single active';
+        }
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <form class="form">
+        <h1>
+            <p clase="one">Register your tour guide</p>
+        </h1>
+        <div class="registration">
+            <label>Full name</label>
+            <div class="box">
+                <input type="text" placeholder="enter your name" name="Full name" required>
+            </div>
+            <label>password</label>
+            <div class="box">
+                <input type="password" placeholder="enter your password" name="password" required>
+            </div>
+            <label>Phone Number</label>
+            <div class="box">
+                <input type="text" placeholder="enter your phone" name="Phone Number" required>
+            </div>
+            <label>choose your tour guide</label>
+            <div class="box">
+                <select required>
+                  <option>....</option>
+                  <option>Amal Awad</option>
+                  <option>Mostafa salah</option>
+                  <option>Mohamed Ali</option>
+                  <option>Yassmin Hassan</option>
+              </select>
+            </div>
+            <label>select a governorate</label>
+            <div class="box" required>
+                <select>
+                  <option>....</option>
+                  <option>Cairo</option>
+                  <option>Giza</option>
+                  <option>Alexandria</option>
+                  <option>Luxor</option>
+              </select>
+            </div>
+            <label>Choose the duration</label>
+            <div class="box">
+                <input type="number" name="Choose the duration" min="1" max="100" required>
+            </div>
+            <button class="submit" type="submit">Register</button>
+        </div>
+        <div class="main">
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                        <img src="pngwing.com (4).png" alt="Mountains" style="width:100%">
+                        <h3>Mostafa salah</h3>
+                        <p>Languages: Chinese, English </p>
+                        <p>price: 3000$</p>
+                        <div class="check">
+                            <span class="fa fa-star checked "></span>
+                            <span class="fa fa-star checked "></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="pngwing.com (5).png" alt="Lights" style="width:100%">
+                        <h3>Amal Awad</h3>
+                        <p>Languages: German </p>
+                        <p>price: 3500$</p>
+                        <div class="check">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="pngwing.com (4).png" alt="Nature" style="width:100%">
+                        <h3>Mohamed Ali</h3>
+                        <p>Languages: English </p>
+                        <p>price: 2900$</p>
+                        <div class="check">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="pngwing.com (5).png" alt="Mountains" style="width:100%">
+                        <h3>Yassmin Hassan</h3>
+                        <p>Languages: Italian</p>
+                        <p>price: 5000$</p>
+                        <div class="check">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="footer">
+        <p>© Copyright 2022 | All rights reserved.</p>
+    </div>
+</body>
+
+</html>

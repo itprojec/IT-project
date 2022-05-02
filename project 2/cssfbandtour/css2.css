@@ -1,0 +1,166 @@
+body {font-family: Arial, Helvetica, sans-serif;
+  background-color:white;
+ }
+  .logo{
+   font-family: Audiowide;
+   text-align:left;
+   font-size:30px;
+   margin:auto;
+   display:inline;
+   padding:auto;
+   color:orange;
+   }
+/* nav*/
+ .navbar {
+   overflow: hidden;
+   background-color: white;
+   position: sticky;
+   position: -webkit-sticky;
+   top: 0;
+   border-bottom:1px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.09);
+ }
+ 
+ /* Style the navigation bar links */
+ .navbar a {
+   float:right;
+   display: inline;
+   color: black;
+   text-align: center;
+   padding: 10px 14px;
+   text-decoration: none;
+   margin:auto;
+   margin-left:15px;
+   padding-top:27px;
+ }
+ 
+ /* Change color on hover */
+ .navbar a:hover ,.navbar a.active {
+ border-bottom:1px solid;
+  border-bottom-color:orange;
+  color:orange;
+ }
+ 
+ /* Right-aligned link */
+ .navbar a.right {
+   float: right;
+ }
+ 
+ .btn {
+   background-color:transparent;
+   float:right;
+   width:4px;
+   background-repeat:no-repeat;
+   outline:none;
+   padding:10px 30px;  
+   cursor: pointer;
+   color:black;
+   margin-left:10px;
+   padding-top:22px;
+   border:none;
+ }
+ .btn:hover{
+ background-color:transparent;
+ }
+ .dark-mode {
+   background-color: black;
+   color: white;
+ }
+ 
+/*nav*/
+body{
+  background:white;
+  background-image:url('aya.jpeg');
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.one{
+  padding-left:20px;
+  padding-top:10px;
+}
+/*form*/
+.form{
+  background-color:#DEA057;
+  padding-right:6px;
+  padding-left:30px;
+  padding-top: 10px;
+  text-shadow: h-shadow v-shadow black;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  width:720px;
+  box-shadow:5px 5px 5px #ccc;
+}
+.p{
+  font-size: 20px;
+  height: 500px;
+  width: 400px;
+  text-emphasis-position: center;
+}
+h1{
+  color:#333;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 2px solid #333;
+  width: 700px;
+ 
+}
+.rating{
+  font-size:15px;
+  border-bottom: 2px solid #333;
+  width: 700px;
+}
+.feedback_category{
+  border-bottom: 2px solid #333;
+  width: 700px;
+}
+.Suggestion{
+  cursor: pointer;
+  padding: 16px 50px;
+  border-radius: 30px;
+}
+.Suggestion:hover{
+  background-color:#E9EFC0;
+}
+.Somthing_is_not_quite_right{
+  cursor: pointer;
+  padding: 16px 50px;
+  border-radius: 30px;
+}
+.Somthing_is_not_quite_right:hover{
+  background-color:#E9EFC0;
+}
+.Compliment{
+  cursor: pointer;
+  padding: 16px 50px;
+  border-radius: 30px;
+}
+.Compliment:hover{
+    background-color:#E9EFC0;
+}
+.fd{
+  width: 700px;
+  height: 150px;
+  border-radius:20px;
+}
+.i{
+  border-radius: 30px;;
+  cursor: pointer;
+  padding: 5px 30px;
+  text-align: center;
+}
+.box{
+  width: 100px;
+  height: 40px;
+}
+.box input{
+  width: 550px;
+  text-shadow: #ccc;
+  border-radius:5px;
+} 
+.footer {
+  background-color: white;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.09);
+  color:orange;
+}
