@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tips by Trips</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="cssfbandtour/css2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/jpeg" href="logo3.jpeg">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="logo3.jpeg" style="width:60px">
+        <div class="logo"><sup>Tips and Trips</sup></div>
+        <id class="navbar a">
+            <button class="btn" ; onclick="myFunction()"><i class="material-icons" style="float:right " >dark_mode</i></button>
+            <a onclick="clickSingleA(this)" class="single" href="..\hazem_gawwad_IT_project\login_page\index.html" target="mnfrm3">Login</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\Tasneem\Contactus.html" target="mnfrm3">Contact Us</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\hazem_gawwad_IT_project\offer_page\index.html" target="mnfrm3">Offers %</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\IT_project\hotels.html" target="mnfrm3">Hotels</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\Tasneem\Airtrips1.html" target="mnfrm3">Air trips</a>
+            <a onclick="clickSingleA(this)" class="single" href="Tour_Guide.html" target="mnfrm3">Tour guid</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\basant\Guide.html" target="mnfrm3">Guide</a>
+            <a onclick="clickSingleA(this)" class="single active" href="#" target="mnfrm3">Feedback</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\toaa\choose_trip\choosetrip.html" target="mnfrm3">Trips</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\index.html" target="mnfrm3" class="right">Home</a>
+    </div>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+        function clickSingleA(a) {
+            items = document.querySelectorAll('.single.active');
+
+            if (items.length) {
+                items[0].className = 'single';
+            }
+
+            a.className = 'single active';
+        }
+    </script>
+    <div class="one">
+        <form class="form">
+            <h1>
+                <p><b>Feedback form</b></p>
+            </h1>
+            <p><b>How do you rate our website</b></p>
+            <div class="rating">
+                <label>rating</label>
+                <input type="range" name="rating" min="0" max="10" value="5">
+                <br>
+                <br>
+            </div>
+            <div class="feedback_category">
+                <p class="a"><b>Please select your feedback category blew</b></p>
+                <input class="Suggestion" id="1" type="button" value="Suggestion">
+                <label for="1"></label>
+                <input class="Somthing_is_not_quite_right" id="2" type="button" value="Somthing is not quite right">
+                <label for="2"></label>
+                <input class="Compliment" id="3" type="button" value="Compliment">
+                <lable for="3"></lable>
+                <br>
+                <br>
+            </div>
+            <br>
+            <div>
+                <label>Fullname*</label>
+                <div class="box">
+                    <input type="text" name="Fullname" required>
+                </div>
+            </div>
+            <br>
+            <div>
+                <label>Email*</label>
+                <div class="box">
+                    <input type="email" name="Email" required>
+                </div>
+            </div>
+            <br>
+            <div>
+                <label>Age*</label>
+                <div class="box">
+                    <input type="text" name="Age" required>
+                </div>
+            </div>
+            <br>
+            <div>
+                <label>Phone*</label>
+                <div class="box">
+                    <input type="text" name="phone" required>
+                </div>
+            </div>
+            <br>
+            <div>
+                <label>Send your feedback*</label>
+                <br>
+                <textarea class="fd" required></textarea>
+            </div>
+            <div>
+                <button type="submit" class="i">Send</button>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <p>© Copyright 2022 | All rights reserved.</p>
+    </div>
+</body>
+
+</html>

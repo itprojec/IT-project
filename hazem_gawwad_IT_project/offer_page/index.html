@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>special offers</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="logo3.jpeg" style="width:60px">
+        <div class="logo"><sup>Tips and Trips</sup>
+
+
+        </div>
+        <id class="navbar a">
+            <button class="btn" ; onclick="myFunction()"><i class="material-icons" style="float:right " >dark_mode</i></button>
+            <a onclick="clickSingleA(this)" class="single" href="..\login_page\index.html" target="mnfrm3">Login</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\..\Tasneem\Contactus.html" target="mnfrm3">Contact Us</a>
+            <a onclick="clickSingleA(this)" class="single active" href="#" target="mnfrm3">Offers %</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\..\IT_project\hotels.html" target="mnfrm3">Hotels</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\..\Tasneem\Airtrips1.html" target="mnfrm3">Air trips</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\..\project 2\Tour_Guide.html" target="mnfrm3">Tour guid</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\..\basant\Guide.html" target="mnfrm3">Guide</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\..\project 2\feedback.html" target="mnfrm3">Feedback</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\..\toaa\choose_trip\choosetrip.html" target="mnfrm3">Trips</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\..\index.html" target="mnfrm3" class="right">Home</a>
+    </div>
+    </div>
+    </div>
+    <div class="special">
+        <h1>special offers</h1>
+    </div>
+    <hr>
+
+    <div>
+        <div class="gallery">
+            <img src="photos/Egypt_Siwa_Oasis_.jpg" width="600" height="400">
+            <div class="desc">
+                if you take a trip to siwa oasis with our organizathion you can go to Eye of Cleopatra for free
+                <a target="_blank" href="..\..\basant\Payment.html" class="book">book now </a>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="photos/museum.jpeg" width="600" height="400">
+            <div class="desc">
+                you can book a trip to Aswan and visit Nubia Museum and pay 500$ instead of 900$
+                <a target="_blank" href="..\..\basant\Payment.html" class="book">book now </a>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="photos/baharya-oasis.jpg" width="600" height="400">
+            <div class="desc">
+                you can visit Bahariya Oasis and make safary trip and take a special photos and pay 200$ insteadof 400$
+                <a target="_blank" href="..\..\basant\Payment.html" class="book">book now </a>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="photos/Nuweibaa.jpg" width="600" height="400">
+            <div class="desc">
+                if you take a trip to siwa oasis with our organizathion you can go to Eye of Cleopatra for free
+                <a target="_blank" href="..\..\basant\Payment.html" class="book">book now </a>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="photos/4-10.jpg" width="600" height="400">
+            <div class="desc">
+                you can take a trip to alex with our buses and book a special hotel and take 30% discount
+                <a target="_blank" href="..\..\basant\Payment.html" class="book">book now</a>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="photos/sitemgr_photo_8456.jpg" width="600" height="400">
+            <div class="desc">
+                if you book a trip to Sharm El-Sheikh in Christmas day , we will give you a 50% discount .
+                <a target="_blank" href="..\..\basant\Payment.html" class="book">book now </a>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="photos/St-Catherine-Mount-Sinai-C-1.jpg" alt="Mountains" width="600" height="400">
+            <div class="desc">
+                you can take a trip to dahab and Saint Catherine Mountains , and have 50% discount
+                <a target="_blank" href="..\..\basant\Payment.html" class="book">book now </a>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="photos/3-important-information-about-building-egyptian-pyramids.jpg" width="600" height="400">
+            <div class="desc">
+                Special offer, you can take a trip to pyramids , Egyptian Museum and Cairo Tower with tour guide for free if you book a stay in kempinski hotel .
+                <a target="_blank" href="..\..\basant\Payment.html" class="book">book now </a>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="photos/dahab-hotel.jpg" width="500" height="400">
+            <div class="desc">
+                Special offer, if you book a trip to Dahab with a Tropitel Dahab Oasis Resort hotel stay we will give you lunch and a safari trip for free .
+                <a target="_blank" href="..\..\basant\Payment.html" class="book">book now </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+        function clickSingleA(a) {
+            items = document.querySelectorAll('.single.active');
+
+            if (items.length) {
+                items[0].className = 'single';
+            }
+
+            a.className = 'single active';
+        }
+    </script>
+
+</body>
+
+</html>
