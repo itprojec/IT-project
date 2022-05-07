@@ -29,18 +29,12 @@ div p {
     height: 200px;
 }
 
-.hotel {
-    /* background-color: #006778; */
-}
-
 .beach {
     /* background-color: darkblue; */
     margin-top: 100px;
     padding-top: 100px;
     /* margin-top:200px;background-color:darkblue;padding-top:100px */
 }
-
-.monu {}
 
 body {
     background-color: #f5f6f7;
@@ -54,8 +48,8 @@ hr {
     width: 100%;
 }
 
-footer {
-    border: 5px black;
+.footer {
+    /* border: 5px black;
     margin-top: 40px;
     padding-top: 20px;
     padding-bottom: 200px;
@@ -64,7 +58,12 @@ footer {
     background-image: url("footer2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    color: black;
+    color: black; */
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px 0 rgb(0 0 0 / 9%);
+    color: orange;
 }
 
 * {
