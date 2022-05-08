@@ -51,6 +51,16 @@
             <a href="#">don't have an account </a>
         </form>
     </div>
+    <form>
+        <p>Username</p>
+        <input type="text" id="username" required placeholder="Enter Username" name="user">
+        <p>Password</p>
+        <input type="password" id="password" required placeholder="Password" name="pass" minlength="6" maxlength="16">
+        <input type="submit" onclick="cookies()" value="login">
+        <a href="#">lost your password?</a>
+        <br>
+        <a href="#">don't have an account </a>
+    </form>
 
     <script>
         function myFunction() {
@@ -66,6 +76,13 @@
             }
 
             a.className = 'single active';
+        }
+
+        function cookies() {
+
+
+            document.cookie = "username = " + document.getElementById("username").value;
+            document.cookie = "password = " + document.getElementById("password").value;
         }
     </script>
 
