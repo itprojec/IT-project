@@ -24,7 +24,7 @@
         </div>
         <id class="navbar a">
             <button class="btn" ; onclick="myFunction()"><i class="material-icons" style="float:right " >dark_mode</i></button>
-            <a onclick="clickSingleA(this)" class="single active" href="" target="mnfrm3">Login</a>
+            <a onclick="clickSingleA(this)" class="single" href="" target="mnfrm3">Login</a>
             <a onclick="clickSingleA(this)" class="single" href="..\..\Tasneem\Contactus.html" target="mnfrm3">Contact Us</a>
             <a onclick="clickSingleA(this)" class="single" href="..\offer_page\index.html" target="mnfrm3">Offers %</a>
             <a onclick="clickSingleA(this)" class="single" href="..\..\IT_project\hotels.html" target="mnfrm3">Hotels</a>
@@ -33,7 +33,7 @@
             <a onclick="clickSingleA(this)" class="single" href="..\..\basant\Guide.html" target="mnfrm3">Guide</a>
             <a onclick="clickSingleA(this)" class="single" href="..\..\project 2\feedback.html" target="mnfrm3">Feedback</a>
             <a onclick="clickSingleA(this)" class="single" href="..\..\toaa\choose_trip\choosetrip.html" target="mnfrm3">Trips</a>
-            <a onclick="clickSingleA(this)" class="single" href="..\..\index.html" target="mnfrm3" class="right">Home</a>
+            <a onclick="clickSingleA(this)" class="single" href="..\..\html.html" target="mnfrm3" class="right">Home</a>
     </div>
     </div>
     </div>
@@ -42,25 +42,15 @@
         <h1>Login Here</h1>
         <form>
             <p>Username</p>
-            <input type="text" required placeholder="Enter Username" name="user">
+            <input type="text" id="username" required placeholder="Enter Username" name="user">
             <p>Password</p>
-            <input type="password" required placeholder="Password" name="pass" minlength="6" maxlength="16">
-            <input type="submit" value="login">
+            <input type="password" id="password" required placeholder="Password" name="pass" minlength="6" maxlength="16">
+            <input type="submit" onclick="cookies()" value="login">
             <a href="#">lost your password?</a>
             <br>
             <a href="#">don't have an account </a>
         </form>
     </div>
-    <form>
-        <p>Username</p>
-        <input type="text" id="username" required placeholder="Enter Username" name="user">
-        <p>Password</p>
-        <input type="password" id="password" required placeholder="Password" name="pass" minlength="6" maxlength="16">
-        <input type="submit" onclick="cookies()" value="login">
-        <a href="#">lost your password?</a>
-        <br>
-        <a href="#">don't have an account </a>
-    </form>
 
     <script>
         function myFunction() {
@@ -86,6 +76,7 @@
         }
     </script>
 
+    <script src="../../jsproject.js"></script>
 </body>
 
 </html>
